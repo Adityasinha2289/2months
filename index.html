@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Gallery - A Journey Through Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="soft_pink">
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="main-title">The Moments That Made Us 💕</h1>
+            <p class="subtitle">One Pew Pew, One Forever 💌</p>
+            
+            <!-- Controls -->
+            <div class="controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌸</span>
+                    <span class="theme-text">Sky Blue</span>
+                </button>
+                
+                <button class="music-control" id="musicControl">
+                    <span class="music-icon">🎵</span>
+                    <span class="music-text">Play Music</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-section">
+            <h3 class="countdown-title">Counting Down to Our Next Anniversary</h3>
+            <div class="countdown-timer" id="countdownTimer">
+                <div class="time-unit">
+                    <span class="time-value" id="days">000</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            <!-- Navigation Arrows -->
+            <button class="nav-arrow prev" id="prevBtn">❮</button>
+            <button class="nav-arrow next" id="nextBtn">❯</button>
+            
+            <!-- Slides -->
+            <div class="slides-wrapper" id="slidesWrapper">
+                <!-- Memory slides will be dynamically inserted here -->
+            </div>
+            
+            <!-- Slide Indicators -->
+            <div class="slide-indicators" id="slideIndicators">
+                <!-- Dots will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- Start Journey Button -->
+        <div class="start-section">
+            <button class="start-btn" id="startBtn">
+                <span class="btn-text">Begin Our Memory Lane</span>
+                <span class="btn-icon">💕</span>
+            </button>
+        </div>
+
+        <!-- Replay Button (Initially Hidden) -->
+        <div class="replay-section" id="replaySection">
+            <button class="replay-btn" id="replayBtn">
+                <span class="btn-text">Replay Memory Lane</span>
+                <span class="btn-icon">🔄</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hidden Audio Element -->
+    <audio id="backgroundMusic" loop>
+        <!-- Replace with your actual audio file -->
+        <source src="your-music.mp3" type="audio/mpeg">
+        <!-- Fallback for browsers that don't support MP3 -->
+        <source src="path/to/your/romantic-music.ogg" type="audio/ogg">
+    </audio>
+
+    <script src="app.js"></script>
+</body>
+</html>

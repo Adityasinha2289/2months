@@ -46,7 +46,7 @@ let currentTheme = 'soft_pink';
 let isMusicPlaying = false;
 
 // Anniversary date - July 8th, 2025
-const anniversaryDate = new Date('2025-07-09T00:40:00');
+const anniversaryDate = new Date('2025-08-09T00:40:00');
 
 // DOM elements
 const slidesWrapper = document.getElementById('slidesWrapper');
